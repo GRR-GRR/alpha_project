@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Création de projet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/form/screen.css" rel="stylesheet">
+    <link href="./css/styleAnt.css" rel="stylesheet">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+<!--     JS pour valider les formulaires du site https://jqueryvalidation.org/validate/  -->    
+    <script src="./js/jquery.validate.js"></script>
+    <script src="./js/additional-methods.js"></script>
+
+  </head>
+
+  <body> 
+
+  <!-- Fixed navbar connecté -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index-user.html">
+            <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="mp.html">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Messages
+              </a>
+            </li> 
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notifications
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pseudo<span class="pull-right"><img src="./img/user-ant.jpg" alt="user imabge" data-holder-rendered="true" style="width: 40px; height: 40px;"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./profil_perso.html">Mon profil <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="./index.html">Deconnexion <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Mes projets</a></li>
+                <li class="divider"></li>
+                <li><a href="./user-list.html">Utilisateurs suivis</a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Projets suivis</a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Projets archivés</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  <!-- FIN DE LA BARRE DE NAV -->
+
+
+  <!-- Fil d'ariane -->
+  <div class="container">
+    <ol class="row breadcrumb">
+      <li><a href="./index-user.html">Accueil</a></li>
+      <li><a href="./projet.html">Projet</a></li>
+      <li class="active">Créer un projet</li>
+    </ol>
+  </div>
+
+
+
+
+  <!-- Fin du fil d'ariane -->
+  <div class="container">
+    <div class="row content well well-ap">
+      <form id="projectForm" action="./projet-list.html" method="post">
+        <div class="col-sm-3 text-center">
+          <img class="img" alt="photo du projet" src="./img/projet-img.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+        </div>
+        <div class="col-sm-9">
+          <h1>Nom du projet</h1>
+          <div>
+            <label><input type="checkbox" id="private" value="" name="private"> Rendre le projet privé</label><br>
+          </div>
+          <div class="form-group">
+              <label for="projectName">Donnez un nom à votre projet :</label>
+              <input type="text" class="form-control" id="projectName" name="projectName">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Changez la photo du projet</label>
+            <input id="projectFile" type="file" class="file required" name="projectFile" accept="image/*">
+          </div>
+          <div class="form-group">
+            <label for="projectDesc">Décrivez votre projet :</label>
+            <textarea class="form-control" id="projectDesc" name="projectDesc"></textarea>
+          </div>
+          <div class="categorie-block">
+            <div class="form-group">
+              <label for="projectCat">Ajoutez des catégories / tag à votre projet :</label>
+              <input type="text" class="form-control" id="projectCat" name="projectCat">
+            </div>
+            <span class="label label-success">Cuisine</span>
+            <span class="label label-danger">DIY</span>
+            <span class="label label-primary">Réparation</span>
+            <span class="label label-danger">Couture</span>
+            <span class="label label-success">Mécanique</span>
+            <span class="label label-success">Informatique</span>
+          </div>
+          <div class="timeline">
+            <h5>Avancement :</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+              <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+              <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Acquis</h3>
+                </div>
+                <div class="panel-body">
+                  <ul  class="list-acquis">
+                    <li>
+                      <div>
+                        Lieu
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        budget
+                      </div>
+                    </li>
+                    <li>-
+                    </li>
+                  </ul>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ajouter">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-ok"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Besoins</h3>
+                </div>
+                <div class="panel-body">
+                  <ul  class="list-besoins">
+                    <li>
+                      <div>
+                        Outils
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        Membres
+                      </div>
+                    </li>
+                    <li>-
+                    </li>
+                  </ul>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ajouter">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-ok"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-md-offset-3">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Sprint</th>
+                <th>Etat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>16/01/17</td>
+                <td>Rencontre financier</td>
+                <td>To do</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>09/07/16</td>
+                <td>Créer les mock-up</td>
+                <td class="success">Done</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>02/02/17</td>
+                <td>Vote pour le logo</td>
+                <td class="warning">Doing</td>
+              </tr>
+            </tbody>
+          </table>
+            <div class="container-fluid col-sm-12 col-md-9 text-center button-action">
+              <input type="submit" class="btn btn-success validation" value="Valider le projet">
+
+              <!-- button modal -->
+              <button type="button" class="btn btn-primary btn-primary validation" data-toggle="modal" data-target="#myModal-archiver">Archiver ce projet</button> 
+              <!-- Modal -->
+              <div class="modal fade" id="myModal-archiver" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <!-- <h4 class="modal-title">Modal Header</h4> -->
+                    </div>
+                    <div class="modal-body">
+                      <h2>Votre projet à été archivé.</h2>
+                      <p>Il a été ajouté a la liste de vos projet archivés.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Fin modal -->
+            </div>
+          </div>
+        </form>
+    </div>
+
+
+  <!-- menu gauche -->
+
+    <div class="row content">
+      <div class="col-md-3 sidenav">
+        <ul class="nav nav-pills nav-stacked">
+          <li>
+            <div class="panel panel-primary initiateur">
+              <div class="panel-heading">
+                <h3 class="panel-title">Initiateur(s)</h3>
+              </div>
+              <div class="panel-body">
+                <ul  class="list-initiateurs">
+                  <li>
+                    <div>
+                      <a href="#">Initiateur A<span class="pull-right"><img alt="Avatar" data-role="discovery-avatar" src="./img/noavatar92.png" style="width: 35px; height: 35px;"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <a href="#">Initiateur B<span class="pull-right"><img alt="Avatar" data-role="discovery-avatar" src="./img/noavatar92.png" style="width: 35px; height: 35px;"></span></a>
+                    </div>
+                  </li>
+                  <li>-
+                  </li>
+                </ul>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Ajouter un Initiateur">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Collaborateur(s)</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-collabs">
+                  <li>
+                    <div>
+                      <a href="#">Collaborateur A<span class="pull-right"><img alt="Avatar" data-role="discovery-avatar" src="./img/noavatar92.png" style="width: 35px; height: 35px;"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <a href="#">Collaborateur B<span class="pull-right"><img alt="Avatar" data-role="discovery-avatar" src="./img/noavatar92.png" style="width: 35px; height: 35px;"></span></a>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Ajouter un Initiateur">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+            <!-- Fin Panel 3 -->
+
+
+          
+          <li>
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h3 class="panel-title">Collaborateur(s) en attente</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-waitting-collabs">
+                  <li>
+                    <div>
+                      <label>
+                          <input type="checkbox">
+                            <a href="#">Collaborateur A<span class="pull-right"><img src="./img/noavatar92.png" style="width: 35px; height: 35px;">
+                            </span></a>
+                        </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <label>
+                        <input type="checkbox">
+                          <a href="#">Collaborateur B<span class="pull-right"><img src="./img/noavatar92.png" style="width: 35px; height: 35px;">
+                          </span></a>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <a class="" href="#">Accepter</a> | <a href="#">Refuser</a> | <a href="#">Contacter</a>
+              </div>
+            </div>
+          </li>
+
+            <!-- Fin Panel 4 -->
+
+          <li><a href="https://trello.com/">> Trello du projet</a></li>
+          <li><a href="./projet.html">> Le projet du mois</a></li>
+        </ul><br>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher dans les messages...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <!-- Discussion -->
+
+
+      <div class="col-md-6">
+        <h4>Ajouter un message :</h4>
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Envoyer</button>
+        </form>
+        <br><br>
+        <h4><small>MESSAGES RECENTS</small></h4>
+        <hr>
+        <h2>Pour l'écran de notre coucou</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Posté par <a href="./profil.html">Mathieu</a>, Sep 27, 2015.</h5>
+        <h5><a href="./AlphaProject-project-list.html"><span class="label label-danger">Matériel</span></a> <a href="./AlphaProject-project-list.html"><span class="label label-primary">aide</span></a></h5><br>
+        <p>Bonjour, je dispose d'un écran lcd de 7' dont je ne me sert pas, et qui pourrait convenir.</p>
+        <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 21</a> | <a href="./contact.html">Signaler</a> | <a href="#">Suprimer</a>
+
+        <br><br>
+        
+        <h4><small>MESSAGES RECENTS</small></h4>
+        <hr>
+        <h2>Super projet</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Posté par <a href="./profil.html">Oualid</a>, Sep 24, 2015.</h5>
+        <h5><a href="./AlphaProject-project-list.html"><span class="label label-success">New</span></a></h5><br>
+        <p>merci de m'avoir accepté dans votre projet, je suis assez disponible en ce moment, n'hésitez pas à me contacter</p>
+        <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a> | <a href="#">Suprimer</a>
+        <br>
+        <hr>
+
+        <h4>Laisser un commentaire:</h4>
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Envoyer</button>
+        </form>
+        <br><br>
+        
+        <p><span class="badge">2</span> Commentaires :</p><br>
+        
+        <div class="row">
+          <div class="col-sm-1">
+            <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+          </div>
+          <div class="col-sm-11">
+            <h4>Mickaël <small>Sep 29, 2015, 9:12 PM</small></h4>
+            <p>super, j'en veux un !</p>
+            <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a> | <a href="#">Suprimer</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-sm-1">
+            <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+          </div>
+          <div class="col-sm-11">
+            <h4>Mourad <small>Sep 25, 2015, 8:25 PM</small></h4>
+            <p>Du coup vous faite comment pour afficher les Tweet ?.</p>
+            <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a> | <a href="#">Suprimer</a>
+            <br>
+            <br>
+            <p><span class="badge">1</span> Commentaire :</p><br>
+            <div class="row">
+              <div class="col-sm-1">
+                <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+              </div>
+              <div class="col-xs-11">
+                <h4>Julien <small>Sep 25, 2015, 8:28 PM</small></h4>
+                <p>Vous pouvez trouver de la doc sur le site de twitter</p>
+                <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a> | <a href="#">Suprimer</a>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- nav droite -->
+
+        <div class="col-md-3 sidenav">
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <div class="panel panel-primary initiateur">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Fil d'actualité</h3>
+                </div>
+                 <div class="panel-body">
+                  <ul class="media-list">
+                    <li class="media"> <!-- info -->
+                    <a href="./user.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/noavatar92.png" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Mickael Marcelat a modifié son profil</p>
+                      </div>
+                      </a>
+                    </li> <!-- fin de l'info -->
+                    <li class="media"> <!-- info -->
+                    <a href="./projet.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/projet-img.jpg" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Antoine Sestier a publié un message dans le projet "horloge coucou twitter"</p>
+                      </div>
+                      </a>
+                    </li> <!-- fin de l'info -->
+                    <li class="media"> <!-- info -->
+                    <a href="./projet.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/noavatar92.png" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Julie L. a créé le projet "Atelier de réparation"</p>
+                      </div>
+                    </a>
+                    </li> <!-- fin de l'info -->
+                  </ul>
+                  <br>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Rechercher...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Appel twitter -->  
+            <li>
+              <div>
+                <h5>Nos site partenaires</h5>
+                <a class="twitter-timeline"  href="https://twitter.com/search?q=%40DigitalGrenoble" data-widget-id="790492483817996288">Tweets sur @DigitalGrenoble</a>
+              </div>
+            </li>
+            <!-- Appel FB -->
+            <li>
+              <div class="fb-page fb_iframe_widget" data-adapt-container-width="true" data-hide-cover="true" data-href="https://www.facebook.com/pages/Kocoriko/685197144960354" data-show-facepile="true" data-show-posts="false" data-small-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=213&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKocoriko%2F685197144960354&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=true"><span style="vertical-align: bottom; width: 213px; height: 154px;"><iframe name="f829454664411c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FfTmIQU3LxvB.js%3Fversion%3D42%23cb%3Dfee23780827e98%26domain%3Dwww.kocoriko.fr%26origin%3Dhttps%253A%252F%252Fwww.kocoriko.fr%252Ff14b2de634f0588%26relation%3Dparent.parent&amp;container_width=213&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKocoriko%2F685197144960354&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=true" style="border: none; visibility: visible; width: 213px; height: 154px;" class=""></iframe></span></div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <hr>
+        <div class="col-lg-12">
+          <div class="col-md-6">
+            <a href="./AlphaProject-contact.html">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+          </div>
+          <div class="col-md-6">
+            <p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================== -->
+
+<!--     Appel du bloc Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<!--     JS pour valider les formulaires du site https://jqueryvalidation.org/validate/  -->   
+    <script>
+    $.validator.setDefaults({
+      submitHandler: function() {
+        alert("Votre projet à été créé !");
+      }
+    });
+
+    $().ready(function() {
+      // validate the comment form when it is submitted
+      $("#commentForm").validate();
+
+      // validate signup form on keyup and submit
+      $("#projectForm").validate({
+        
+        debug: true,
+
+        rules: {
+          projectName: {
+            required: true,
+            minlength: 20
+          },
+          projectFile: {
+            required: true,
+
+          },
+          projectDesc: {
+            required: true,
+            minlength: 200
+          },
+          projectCat: {
+            required: false,
+            minlength: 2
+          },
+        },
+        messages: {
+          projectName: {
+            required: "Vous devez nommer votre projet.",
+            minlength: "Le nom de votre projet doit comporter au moins 20 lettres."
+          },
+          projectFile: {
+            required: "Vous devez uploader une photo.",
+          },
+          projectDesc: {
+            required: "Vous devez decrire votre projet en quelques lignes.",
+            minlength: "Vous devez entrer une description de plus de 200 charactères."
+          },
+          projectCat : {
+            minlength: "le nom d'une catégorie doit comporter au moins 2 lettres."
+          }
+        }
+      });
+
+      // propose username by combining first- and lastname
+      $("#username").focus(function() {
+        var firstname = $("#firstname").val();
+        var lastname = $("#lastname").val();
+        if (firstname && lastname && !this.value) {
+          this.value = firstname + "." + lastname;
+        }
+      });
+
+      //code to hide topic selection, disable for demo
+      var newsletter = $("#newsletter");
+      // newsletter topics are optional, hide at first
+      var inital = newsletter.is(":checked");
+      var topics = $("#newsletter_topics")[inital ? "removeClass" : "addClass"]("gray");
+      var topicInputs = topics.find("input").attr("disabled", !inital);
+      // show when newsletter is checked
+      newsletter.click(function() {
+        topics[this.checked ? "removeClass" : "addClass"]("gray");
+        topicInputs.attr("disabled", !this.checked);
+      });
+    });
+    </script>
+  
+
+  </body>
+</html>

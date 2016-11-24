@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Projet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Styles for DIAPORAMA -->
+    <link rel="stylesheet" href="./css/slippry.css">
+
+
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="./css/styleAnt.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slippry.min.js"></script>
+
+  </head>
+
+  <body> 
+
+<!-- Fixed navbar connecté -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index-user.html">
+            <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li>           
+              <a class="text-center" href="projet-creation.html">
+                <button type="button" class="btn btn-sm btn-primary creer">Créer un projet</button>
+              </a>
+            </li>
+            <li>
+              <a href="mp.html">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Messages
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notifications
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pseudo<span class="pull-right"><img src="./img/user-ant.jpg" data-holder-rendered="true" style="width: 40px; height: 40px;"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./profil_perso.html">Mon profil <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="./index.html">Deconnexion <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Mes projets</a></li>
+                <li class="divider"></li>
+                <li><a href="./user-list.html">Utilisateurs suivis</a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Projets suivis</a></li>
+                <li class="divider"></li>
+                <li><a href="./projet-list.html">Projets archivés</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- FIN DE LA BARRE DE NAV -->
+
+
+<!-- Fil d'ariane -->
+<div class="container">
+  <ol class="row breadcrumb">
+    <li><a href="./index.html">Home</a></li>
+    <li class="active">Projet</li>
+  </ol>
+</div>
+<!-- Fin du fil d'ariane -->
+
+<div class="container">
+  <div class="row content well well-ap">
+    <!-- Diaporama http://slippry.com/settings/ -->
+    <div class="col-sm-12">
+      <div class="demo_block">
+        <h2 id="main-title">Simple demo with default config</h2>
+        <a href="#glob" class='prev'>Prev</a> / <a href="#glob" class='next'>Next</a>
+    || <a href="#glob" class='init'>Init</a> | <a href="#glob" class='reset'>Destroy</a> | <a href="#glob" class='reload'>Reload</a>
+    || <a href="#glob" class='stop'>Stop</a> | <a href="#glob" class='start'>Start</a>
+    <br/>
+    <br/>
+      <ul id="demo1">
+        <li><a href="#slide1"><img src="./img/image-1.jpg" alt="This is caption 1 <a href='#link'>Even with links!</a>"></a></li>
+        <li><a href="#slide2"><img src="./img/image-2.jpg"  alt="This is caption 2"></a></li>
+        <li><a href="#slide2"><img src="./img/image-3.jpg"  alt="This is caption 2"></a></li>
+        <li><a href="#slide3"><img src="./img/image-4.jpg" alt="And this is some very long caption for slide 3. Yes, really long."></a></li>
+        <li><a href="#slide2"><img src="./img/image-5.jpg"  alt="This is caption 2"></a></li>
+        <li><a href="#slide2"><img src="./img/image-6.jpg"  alt="This is caption 2"></a></li>
+        <li><a href="#slide2"><img src="./img/image-7.jpg"  alt="This is caption 2"></a></li>
+
+      </ul>
+      </div>
+    </div>
+
+    <!-- Fin diapo -->
+
+
+<!--<div class="col-sm-3 col-sm-offset-9">
+      <a class="edition-pencil pull-right" href="AlphaProject-Projet-Creer.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><small> Modifier le projet</small></a>
+    </div> -->
+    <div class="container-fluid col-sm-3 text-center">
+        <img class="img" alt="photo du projet" src="http://www.zprod.org/zwp/wp-content/uploads/2014/01/bobbyWorkSm.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+    </div>
+    <div class="col-sm-9">
+      <h1>Horloge coucou twitter (Arduino)</h1>
+      <p><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+       21 | 
+      <a href="./contact.html">Signaler</a> | <a class="edition-pencil" href="./projet-creation.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+       Modifier le projet</a></p>
+      <br>
+
+      <p>Créer une horloge connectée capable de donner l'heure et d'afficher des tweet sur un écran.</p>
+      <div class="categorie-block">
+        <h5>Catégorie du projet / tags :</h5>
+        <a href="./projet-list.html"><span class="label label-success">Arduino</span></a>
+        <a href="./projet-list.html"><span class="label label-danger">DIY</span></a>
+        <a href="./projet-list.html"><span class="label label-primary">Electronique</span></a>
+        <a href="./projet-list.html"><span class="label label-danger">Objet</span></a>
+      </div>
+      <div class="timeline">
+        <h5>Avancement du projet :</h5>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 35%">Collaborateur<span class="sr-only">35% Complete (success)</span></div>
+          <div class="progress-bar progress-bar-warning" style="width: 20%">Outils<span class="sr-only">20% Complete (warning)</span></div>
+          <div class="progress-bar progress-bar-danger" style="width: 10%">Financement<span class="sr-only">10% Complete (danger)</span></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-3 ">
+      <ul class="nav nav-pills nav-stacked">
+        <li>
+          <div class="panel panel-success initiateur">
+            <div class="panel-heading">
+              <h3 class="panel-title">Acquis</h3>
+            </div>
+            <div class="panel-body">
+              <ul  class="list-initiateurs">
+                <li>
+                  <div>
+                    Lieu
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    budget
+                  </div>
+                </li>
+                <li>-
+                </li>
+              </ul>
+              <a href="#section2">Ajouter</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <ul class="nav nav-pills nav-stacked">
+        <li>
+          <div class="panel panel-warning initiateur">
+            <div class="panel-heading">
+              <h3 class="panel-title">Besoins</h3>
+            </div>
+            <div class="panel-body">
+              <ul  class="list-initiateurs">
+                <li>
+                  <div>
+                    Outils
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    Membres
+                  </div>
+                </li>
+                <li>-
+                </li>
+              </ul>
+              <a href="#section2">Ajouter</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-9 col-md-offset-3">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Sprint</th>
+            <th>Etat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>16/01/17</td>
+            <td>Rencontre financier</td>
+            <td>To do</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>09/07/16</td>
+            <td>Créer les mock-up</td>
+            <td class="success">Done</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>02/02/17</td>
+            <td>Vote pour le logo</td>
+            <td class="warning">Doing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+<!-- modal box pour ajouter au profil -->
+
+    <div class="container-fluid col-sm-12 col-md-9 col-md-offset-3 text-center button-action">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-primary btn-participer validation" data-toggle="modal" data-target="#myModal-suivre">Suivre ce projet</button> 
+      <button type="button" class="btn btn-warning btn-participer validation" data-toggle="modal" data-target="#myModal-ne-plus-suivre">Ne plus suivre ce projet</button>
+      <button type="button" class="btn btn-success btn-participer validation" data-toggle="modal" data-target="#myModal-participer">Participer au projet</button> 
+      <button type="button" class="btn btn-danger btn-participer validation" data-toggle="modal" data-target="#myModal-quitter">Quitter ce projet</button>
+      <button type="button" class="btn btn-danger btn-participer validation" data-toggle="modal" data-target="#myModal-diapo">Diaporama du projet</button>
+
+
+
+
+<!-- modal box pour ajouter / retirer au profil -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal-suivre" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!--               <h4 class="modal-title">Modal Header</h4> -->
+            </div>
+            <div class="modal-body">
+              <h2>Vous suivez désormais ce projet.
+            </h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal-ne-plus-suivre" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!--               <h4 class="modal-title">Modal Header</h4> -->
+            </div>
+            <div class="modal-body">
+              <h2>Vous ne suivez plus ce projet</h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal-participer" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+<!--               <h4 class="modal-title">Modal Header</h4> -->
+            </div>
+            <div class="modal-body">
+              <h2>Les administrateurs ont été avertis de votre souhait de participer à ce projet</h2>
+              <p>Vous recevrez un message de confirmation.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal-quitter" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal-quitter">&times;</button>
+<!--               <h4 class="modal-title">Modal Header</h4> -->
+            </div>
+            <div class="modal-body">
+              <h2>Les administrateurs ont été avertis de votre souhait de quitter ce projet</h2>
+              <p>Vous recevrez un message de confirmation.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div> <!-- Fin modal -->
+
+
+
+<!-- NAV GAUCHE -->
+
+</div>
+  <div class="row content">
+    <div class="col-md-3 sidenav">
+      <ul class="nav nav-pills nav-stacked">
+        <li>
+          <div class="panel panel-primary initiateur">
+            <div class="panel-heading">
+              <h3 class="panel-title">Initiateur(s)</h3>
+            </div>
+            <div class="panel-body">
+              <ul  class="list-initiateurs">
+                <li>
+                  <div>
+                    <a href="./user.html">Initiateur A<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="./user.html">Initiateur B<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;"></span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Collaborateur(s)</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-collabs">
+                <li>
+                  <div>
+                    <a href="./user.html">Collaborateur A<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="./user.html">Collaborateur B<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="./user.html">Collaborateur C<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;"></span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Collaborateur(s) en attente</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-waitting-collabs">
+                <li>
+                  <div>
+                    <label>
+                        <input type="checkbox">
+                          <a href="./user.html">Collaborateur D<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;">
+                          </span></a>
+                      </label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label>
+                      <input type="checkbox">
+                        <a href="./user.html">Collaborateur E<span class="pull-right"><img src="./img/noavatar92.png" alt="image avatar manquant" style="width: 35px; height: 35px;">
+                        </span></a>
+                    </label>
+                  </div>
+                </li>
+                <li>-</li>
+              </ul>
+              <a href="#"></a>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li><a href="#">Trello du projet</a></li>
+        <li><a href="#">lien connexe 2</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+<!-- Discussion -->
+
+
+    <div class="col-md-6">
+      <h4>Ajouter un message :</h4>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Envoyer</button>
+      </form>
+      <br><br>
+      <h4><small>MESSAGES RECENTS</small></h4>
+      <hr>
+      <h2>Pour l'écran de notre coucou</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Posté par <a href="./profil.html">Mathieu</a>, Sep 27, 2015.</h5>
+      <h5><a href="./AlphaProject-project-list.html"><span class="label label-danger">Matériel</span></a> <a href="./AlphaProject-project-list.html"><span class="label label-primary">aide</span></a></h5><br>
+      <p>Bonjour, je dispose d'un écran lcd de 7' dont je ne me sert pas, et qui pourrait convenir.</p>
+      <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 21</a> | <a href="./contact.html">Signaler</a>
+
+      <br><br>
+      
+      <h4><small>MESSAGES RECENTS</small></h4>
+      <hr>
+      <h2>Super projet</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Posté par <a href="./profil.html">Oualid</a>, Sep 24, 2015.</h5>
+      <h5><a href="./projet-list.html"><span class="label label-success">New</span></a></h5><br>
+      <p>merci de m'avoir accepté dans votre projet, je suis assez disponible en ce moment, n'hésitez pas à me contacter</p>
+      <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a>
+      <br>
+      <hr>
+
+      <h4>Laisser un commentaire :</h4>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Envoyer</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Commentaires :</p><br>
+      
+      <div class="row">
+        <div class="col-sm-1">
+          <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+        </div>
+        <div class="col-sm-11">
+          <h4>Mickaël <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>super, j'en veux un !</p>
+          <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a>
+          <br>
+          <br>
+        </div>
+        <div class="col-sm-1">
+          <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+        </div>
+        <div class="col-sm-11">
+          <h4>Mourad <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <p>Du coup vous faite comment pour afficher les Tweet ?</p>
+          <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a>
+          <br>
+          <br>
+          <p><span class="badge">1</span> Commentaire :</p><br>
+          <div class="row">
+            <div class="col-sm-1">
+              <img src="./img/noavatar92.png" height="25" width="25" alt="Avatar">
+            </div>
+            <div class="col-xs-11">
+              <h4>Julien <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <p>Vous pouvez trouver de la doc sur le site de twitter</p>
+              <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 11</a> | <a href="./contact.html">Signaler</a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- nav droite -->
+
+
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills">
+            <li>
+              <div class="panel panel-primary initiateur">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Fil d'actualité</h3>
+                </div>
+                <div class="panel-body">
+                  <ul class="media-list">
+                    <li class="media"> <!-- info -->
+                    <a href="./user.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/noavatar92.png" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Mickael Marcelat a modifié son profil</p>
+                      </div>
+                      </a>
+                    </li> <!-- fin de l'info -->
+                    <li class="media"> <!-- info -->
+                    <a href="./projet.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/projet-img.jpg" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Antoine Sestier a publié un message dans le projet "horloge coucou twitter"</p>
+                      </div>
+                      </a>
+                    </li> <!-- fin de l'info -->
+                    <li class="media"> <!-- info -->
+                    <a href="./projet.html">
+                      <div class="media-left">
+                        <img class="media-object" src="./img/noavatar92.png" alt="avatar manquant" style="width: 35px; height: 35px;">
+                      </div>
+                      <div class="media-body">
+                        <p class="media-heading">Julie L. a créé le projet "Atelier de réparation"</p>
+                      </div>
+                    </a>
+                    </li> <!-- fin de l'info -->
+                  </ul>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Appel twitter -->  
+            <li>
+              <div>
+                <h5>Nos site partenaire</h5>
+                <a class="twitter-timeline"  href="https://twitter.com/search?q=%40DigitalGrenoble" data-widget-id="790492483817996288">Tweets sur @DigitalGrenoble</a>
+              </div>
+            </li>
+            <!-- Appel FB -->
+            <li>
+              <div class="fb-page fb_iframe_widget" data-adapt-container-width="true" data-hide-cover="true" data-href="https://www.facebook.com/pages/Kocoriko/685197144960354" data-show-facepile="true" data-show-posts="false" data-small-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=213&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKocoriko%2F685197144960354&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=true"><span style="vertical-align: bottom; width: 213px; height: 154px;"><iframe name="f829454664411c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FfTmIQU3LxvB.js%3Fversion%3D42%23cb%3Dfee23780827e98%26domain%3Dwww.kocoriko.fr%26origin%3Dhttps%253A%252F%252Fwww.kocoriko.fr%252Ff14b2de634f0588%26relation%3Dparent.parent&amp;container_width=213&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKocoriko%2F685197144960354&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=true" style="border: none; visibility: visible; width: 213px; height: 154px;" class=""></iframe></span></div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Fin de nav droite -->
+
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <hr>
+        <div class="col-lg-12">
+          <div class="col-md-6">
+            <a href="./contact.html">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+          </div>
+          <div class="col-md-6">
+            <p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+    
+
+    <!-- http://slippry.com/settings/ -->
+    <script>
+      $(function() {
+        var demo1 = $("#demo1").slippry({
+          // transition: 'fade',
+          // useCSS: true,
+          // speed: 1000,
+          // pause: 3000,
+          // auto: true,
+          // preload: 'visible',
+          // autoHover: false
+        });
+
+        $('.stop').click(function () {
+          demo1.stopAuto();
+        });
+
+        $('.start').click(function () {
+          demo1.startAuto();
+        });
+
+        $('.prev').click(function () {
+          demo1.goToPrevSlide();
+          return false;
+        });
+        $('.next').click(function () {
+          demo1.goToNextSlide();
+          return false;
+        });
+        $('.reset').click(function () {
+          demo1.destroySlider();
+          return false;
+        });
+        $('.reload').click(function () {
+          demo1.reloadSlider();
+          return false;
+        });
+        $('.init').click(function () {
+          demo1 = $("#demo1").slippry();
+          return false;
+        });
+      });
+    </script>
+
+
+  </body>
+</html>

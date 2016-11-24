@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Liste de projet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styleAnt.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">
+            <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+            </a>
+        </div>
+          <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li>           
+                <a class="text-center" href="#">
+                  <button type="button" class="btn btn-sm btn-primary creer">Créer un projet</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 39 Messages
+                </a>
+             </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 3 Comments
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> 39 Shares
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Antoine Sestier - Admin panel<span class="pull-right"><img src="./img/1797416_10152171215647459_1088434335_n.jpg" alt="image user" style="width: 40px; height: 40px;"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Messages <span class="badge pull-right"> 39</span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="http://getbootstrap.com/examples/theme/#">Action</a></li>
+                 <li><a href="http://getbootstrap.com/examples/theme/#">Another action</a></li>
+                 <li><a href="http://getbootstrap.com/examples/theme/#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="http://getbootstrap.com/examples/theme/#">Separated link</a></li>
+                  <li><a href="http://getbootstrap.com/examples/theme/#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+<!-- Fil d'ariane -->
+    <div class="container">
+      <ol class="row breadcrumb">
+        <li><a href="./index.html">Home</a></li>
+        <li class="active"><a href="#">Liste de projet</a></li>
+      </ol>
+    </div>
+<!-- Fin du fil d'ariane -->
+<!--Debut Search BAR-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 pull-center well">
+        <form class="form-inline" action="#" method="POST">
+          <select class="form-control">
+            <option>Projet</option>
+            <option>Utilisateur</option>
+            <option>Catégorie</option>
+            <option>Ville</option>
+          </select>
+          <div class="input-group custom-search-form">
+            <input id="search" type="text" class="form-control" placeholder="...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                  <i>Rechercher</i>
+              </button>
+            </span>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<!--Fin  Search BAR-->
+
+    <div class="container">
+      <div class="row content well well-ap">
+        <div class=" container-fluid col-sm-3 text-center">
+          <img data-src="holder.js/" class="img" alt="photo du projet" src="http://www.zprod.org/zwp/wp-content/uploads/2014/01/bobbyWorkSm.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+            <a href="./contact.html">Signaler ce projet</a>
+        </div>
+        <div class="col-sm-9">
+          <h2>Nom du projet</h2>
+            <p>Ceci est la présentation écrite du premier projet du site Alpha Projects. Il doit décrire le projet dans sa globalité afin que chaque utilisateur (inscrit ou non) puisse connaitre le projet en question et, si il le souhaite, participer à ce projet en tant que collaborateur.</p>
+              <div class="categorie-block">
+                <h5>Catégorie du projet / tags :</h5>
+                  <span class="label label-success">environemment</span>
+                  <span class="label label-danger">jeux-video</span>
+                  <span class="label label-primary">informatique</span>
+                  <span class="label label-danger">travail</span>
+                  <span class="label label-success">expo</span>
+                  <span class="label label-primary">société</span>
+              </div>
+              <div class="Timeline">
+                <h5>Avancement du projet :</h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+                    <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+                  </div>
+              </div>
+        </div>
+
+        <div class="col-sm-9">
+          <h4>Initiateur(s) du projet :</h4>                         
+            <a href="#">Initiateur A</a>
+            <a href="#">Initiateur B</a>
+            <a href="#">Initiateur C</a>
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="#">-</a>
+            <a href="#">-</a><br>
+            <a href="#section2">Ajouter un initiateur</a>
+          <h4>Collaborateur(s) du projet :</h4>
+            <a href="#">Collaborateur A</a>
+            <a href="#">Collaborateurs B</a>
+            <a href="#">Collaborateur C</a>
+            <a href="#">-</a>
+            <a href="#"></a>
+            <a href="#">-</a>
+            <a href="#">-</a><br>
+            <a href="#section2">Ajouter un collaborateur</a>
+        </div>
+
+        <div class="container-fluid">
+          <div class="text-center col-sm-12">
+            <a href="AlphaProject-Projet.html"><button type="button" class="btn btn-primary btn-participer">En savoir plus sur le projet</button></a>
+            <a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre ce projet</button></a>
+          </div>
+        </div>
+
+    </div>  
+ </div>
+
+    <div class="container">
+      <div class="row content well well-ap">
+        <div class=" container-fluid col-sm-3 text-center">
+          <img data-src="holder.js/" class="img" alt="photo du projet" src="http://www.zprod.org/zwp/wp-content/uploads/2014/01/bobbyWorkSm.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+            <a href="./contact.html">Signaler ce projet</a>
+        </div>
+        <div class="col-sm-9">
+          <h2>Nom du projet</h2>
+            <p>Ceci est la présentation écrite du premier projet du site Alpha Projects. Il doit décrire le projet dans sa globalité afin que chaque utilisateur (inscrit ou non) puisse connaitre le projet en question et, si il le souhaite, participer à ce projet en tant que collaborateur.</p>
+              <div class="categorie-block">
+                <h5>Catégorie du projet / tags :</h5>
+                  <span class="label label-success">environemment</span>
+                  <span class="label label-danger">jeux-video</span>
+                  <span class="label label-primary">informatique</span>
+                  <span class="label label-danger">travail</span>
+                  <span class="label label-success">expo</span>
+                  <span class="label label-primary">société</span>
+              </div>
+              <div class="Timeline">
+                <h5>Avancement du projet :</h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+                    <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+                  </div>
+              </div>
+        </div>
+
+
+    <div class="col-sm-9">
+                <h4>Initiateur(s) du projet :</h4>                         
+                  <a href="#">Initiateur A</a>
+                  <a href="#">Initiateur B</a>
+                  <a href="#">Initiateur C</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a><br>
+                  <a href="#section2">Ajouter un initiateur</a>
+         
+                <h4>Collaborateur(s) du projet :</h4>
+                  <a href="#">Collaborateur A</a>
+                  <a href="#">Collaborateurs B</a>
+                  <a href="#">Collaborateur C</a>
+                  <a href="#">-</a>
+                  <a href="#"></a>
+                  <a href="#">-</a>
+                  <a href="#"></a><br>
+                  <a href="#section2">Ajouter un collaborateur</a>
+
+    </div>
+
+
+        <div class="row">
+          <div class="text-center col-sm-12 col-sm">
+            <a href="AlphaProject-Projet.html"><button type="button" class="btn btn-primary btn-participer">En savoir plus sur le projet</button></a>
+            <a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre ce projet</button></a>
+          </div>
+        </div>
+
+    </div>  
+ </div>
+
+<div class="container">
+      <div class="row content well well-ap">
+        <div class=" container-fluid col-sm-3 text-center">
+          <img data-src="holder.js/" class="img" alt="photo du projet" src="http://www.zprod.org/zwp/wp-content/uploads/2014/01/bobbyWorkSm.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+            <a href="./contact.html">Signaler ce projet</a>
+        </div>
+        <div class="col-sm-9">
+          <h2>Nom du projet</h2>
+            <p>Ceci est la présentation écrite du premier projet du site Alpha Projects. Il doit décrire le projet dans sa globalité afin que chaque utilisateur (inscrit ou non) puisse connaitre le projet en question et, si il le souhaite, participer à ce projet en tant que collaborateur.</p>
+              <div class="categorie-block">
+                <h5>Catégorie du projet / tags :</h5>
+                  <span class="label label-success">environemment</span>
+                  <span class="label label-danger">jeux-video</span>
+                  <span class="label label-primary">informatique</span>
+                  <span class="label label-danger">travail</span>
+                  <span class="label label-success">expo</span>
+                  <span class="label label-primary">société</span>
+              </div>
+              <div class="Timeline">
+                <h5>Avancement du projet :</h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+                    <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+                  </div>
+              </div>
+        </div>
+
+
+    <div class="col-sm-9">
+                <h4>Initiateur(s) du projet :</h4>                         
+                  <a href="#">Initiateur A</a>
+                  <a href="#">Initiateur B</a>
+                  <a href="#">Initiateur C</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a><br>
+                  <a href="#section2">Ajouter un initiateur</a>
+         
+                <h4>Collaborateur(s) du projet :</h4>
+                  <a href="#">Collaborateur A</a>
+                  <a href="#">Collaborateurs B</a>
+                  <a href="#">Collaborateur C</a>
+                  <a href="#">-</a>
+                  <a href="#"></a>
+                  <a href="#">-</a>
+                  <a href="#"></a><br>
+                  <a href="#section2">Ajouter un collaborateur</a>
+
+    </div>
+
+
+        <div class="row">
+          <div class="text-center col-sm-12 col-sm">
+            <a href="AlphaProject-Projet.html"><button type="button" class="btn btn-primary btn-participer">En savoir plus sur le projet</button></a>
+            <a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre ce projet</button></a>
+          </div>
+        </div>
+
+    </div>  
+ </div>
+
+<div class="container">
+      <div class="row content well well-ap">
+        <div class=" container-fluid col-sm-3 text-center">
+          <img data-src="holder.js/" class="img" alt="photo du projet" src="http://www.zprod.org/zwp/wp-content/uploads/2014/01/bobbyWorkSm.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+            <a href="./contact.html">Signaler ce projet</a>
+        </div>
+        <div class="col-sm-9">
+          <h2>Nom du projet</h2>
+            <p>Ceci est la présentation écrite du premier projet du site Alpha Projects. Il doit décrire le projet dans sa globalité afin que chaque utilisateur (inscrit ou non) puisse connaitre le projet en question et, si il le souhaite, participer à ce projet en tant que collaborateur.</p>
+              <div class="categorie-block">
+                <h5>Catégorie du projet / tags :</h5>
+                  <span class="label label-success">environemment</span>
+                  <span class="label label-danger">jeux-video</span>
+                  <span class="label label-primary">informatique</span>
+                  <span class="label label-danger">travail</span>
+                  <span class="label label-success">expo</span>
+                  <span class="label label-primary">société</span>
+              </div>
+              <div class="Timeline">
+                <h5>Avancement du projet :</h5>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+                    <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+                    <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+                  </div>
+              </div>
+        </div>
+
+
+    <div class="col-sm-9">
+                <h4>Initiateur(s) du projet :</h4>                         
+                  <a href="#">Initiateur A</a>
+                  <a href="#">Initiateur B</a>
+                  <a href="#">Initiateur C</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a>
+                  <a href="#">-</a><br>
+                  <a href="#section2">Ajouter un initiateur</a>
+         
+                <h4>Collaborateur(s) du projet :</h4>
+                  <a href="#">Collaborateur A</a>
+                  <a href="#">Collaborateurs B</a>
+                  <a href="#">Collaborateur C</a>
+                  <a href="#">-</a>
+                  <a href="#"></a>
+                  <a href="#">-</a>
+                  <a href="#"></a><br>
+                  <a href="#section2">Ajouter un collaborateur</a>
+
+    </div>
+
+
+        <div class="row">
+          <div class="text-center col-sm-12 col-sm">
+            <a href="AlphaProject-Projet.html"><button type="button" class="btn btn-primary btn-participer">En savoir plus sur le projet</button></a>
+            <a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participers">Suivre ce projet</button></a>
+          </div>
+        </div>
+
+    </div>  
+ </div>
+   
+      <div class="container">
+        <div class="row content">
+          <div class=" container-fluid col-sm-12 text-center">
+            <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+             <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+
+    <div class="container-fluid">
+      <div class="row footer">
+        <hr>
+          <div class="col-lg-12">
+            <div class="col-md-6">
+              <a href="#">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+            </div>
+            <div class="col-md-6">
+              <p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+            </div>
+          </div>
+      </div>
+      </div>
+
+   
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Accueil - Créez ou collaborez à un projet.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/styleAnt.css" rel="stylesheet">
+
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Styles for DIAPORAMA -->
+    <link rel="stylesheet" href="./css/vegas.css">
+
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/vegas.js"></script>
+
+  </head>
+
+  <body>    
+
+    <!-- Fixed navbar déconnecté -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+              </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><b>Connexion / Inscription</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Connectez vous avec :
+                                        <div>
+                                            <a href="#" class="btn btn-block btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="#" class="btn btn-block btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            <a href="#" class="btn btn-block btn-google"><i class="fa fa-google"></i> Gmail</a>
+                                        </div>
+                                        ou
+                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav" name="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Mot de passe</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe" required>
+                                                <div class="help-block text-right"><a href="mot-de-passe-oublier.html">Mot de passe oublié ?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                 <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Gardez moi connecté
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<!-- FIN DE LA BARRE DE NAV -->
+
+
+<!-- Fil d'ariane -->
+<!-- <div class="container">
+  <ol class="row breadcrumb">
+    <li class="active"><a href="#">Home</a></li>
+  </ol>
+</div> -->
+<!-- Fin du fil d'ariane -->
+
+
+<div class="home jumbotron text-center">
+  <h1>Rejoignez<br> ou créez<br> un <strong>Alpha project !</strong></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 pull-center well-ap">
+        <form class="form-inline" action="#" method="POST">
+          <select class="form-control">
+            <option>Projet</option>
+            <option>Utilisateur</option>
+            <option>Catégorie</option>
+            <option>Ville</option>
+          </select>
+          <div class="input-group custom-search-form">
+            <input id="search" type="text" class="form-control searchFiltre" placeholder="Ex : Sérigraphie…">
+            <span class="input-group-btn">
+              <a href="./projet-list.html"><button class="btn btn-primary" type="button"><i>Valider</i></button></a>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <p><a href="./projet-list.html">Trouvez un projet</a> à rejoindre, il en existe des milliers.<br>Ou <a href="./login_register.html">créez le votre</a> et ajoutez des collaborateurs.</p>
+  <p><a href="./index-user.html"><button type="button" class="btn btn-lg btn-success link">Créer un projet</button></a></p>
+</div>
+
+<!-- Liste suggérée -->
+<div class="container-fluid"><div class="row"><h3 class="col-sm-9 col-sm-offset-3">Top projets :</h3></div><br></div>
+<!-- Liste suggérée ./-->
+
+
+<!-- Résumé projet -->
+
+<div class="container well">
+  <div class="row content">
+    <div class=" container-fluid col-sm-3 text-center">
+      <img class="img" alt="photo du projet" src="./img/projet-img.jpg" data-holder-rendered="true" style="width: 100%; height: auto;">
+    </div>
+    <div class="col-sm-9">
+      <h2>Le projet des débutants</h2>
+       <p><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+       21 | <a href="./contact.html">Signaler</a></p>
+      <br>
+        <p>Ceci est la présentation écrite du premier projet du site Alpha Projects. Il doit décrire le projet dans sa globalité afin que chaque utilisateur (inscrit ou non) puisse connaitre le projet en question et, si il le souhaite, participer à ce projet en tant que collaborateur.</p>
+          <div class="categorie-block">
+            <h5>Catégorie du projet / tags :</h5>
+              <a href="./projet-list.html"><span class="label label-success">Astuce</span></a>
+              <a href="./projet-list.html"><span class="label label-danger">Communauté</span></a>
+              <a href="./projet-list.html"><span class="label label-primary">informatique</span></a>
+              <a href="./projet-list.html"><span class="label label-danger">Tuto</span></a>
+              <a href="./projet-list.html"><span class="label label-danger">Documentation</span></a>
+
+          </div>
+          <div class="Timeline">
+            <h5>Avancement du projet :</h5>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 90%"><span class="sr-only">35% Complete (success)</span>Documentation</div>
+                <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">65% Complete (danger)</span>Collaborateurs</div>
+              </div>
+          </div>
+        </div>
+
+<!-- Bloc collab / users  -->
+
+        <div class="col-sm-2 collab-block">
+          <h5>Initiateur(s) :</h5>                         
+          <a href="./user.html">Mickaël Marcelat</a>, 
+          <a href="./user.html">Antoine Sestier</a>, 
+          <div class="end-block"><a href="./user-list.html">> Voir la liste</a></div>
+        </div>
+        
+
+<!-- Bloc collab / users  -->
+
+        <div class="col-sm-2 collab-block">
+          <h5>Collaborateur(s) :</h5>
+          <a href="./user.html">Julie</a>, 
+          <a href="./user.html">Walid</a>, 
+          <a href="./user.html">Mourad</a>
+          <div class="end-block"><a href="./user-list.html">> Voir la liste</a></div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="text-center col-sm-12">
+            <a href="./projet.html"><button type="button" class="btn btn-success btn-participer link">En savoir plus sur le projet</button></a>
+            <a href="./index-user.html"><button type="button" class="btn btn-primary btn-participer link">Suivre ce projet</button></a>
+          </div>
+        </div>
+    </div>  
+ </div>
+
+<!-- Fin de résumé projet -->
+
+
+<!-- PAGINATION -->
+    <div class="container">
+      <div class="row content">
+        <div class=" container-fluid col-sm-12 text-center">
+          <ul class="pagination">
+<!--             <li><a href="#">&laquo;</a></li> -->
+            <li><a href="./projet-list.html">1</a></li>
+            <li><a href="./projet-list.html">2</a></li>
+            <li><a href="./projet-list.html">3</a></li>
+            <li><a href="./projet-list.html">4</a></li>
+            <li><a href="./projet-list.html">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <hr>
+        <div class="col-lg-12">
+          <div class="col-md-6">
+            <a href="./AlphaProject-contact.html">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+          </div>
+          <div class="col-md-6">
+            <p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Diaporama Vegas bien http://vegas.jaysalvat.com/documentation/settings/ -->
+    <script>
+
+    $(".jumbotron").vegas({
+    delay: 7000,
+    timer: false,
+    shuffle: true,
+    firstTransition: 'fade',
+    firstTransitionDuration: 5000,
+    transition: [ 'fade', 'zoomOut', 'swirlLeft' ],
+    transitionDuration: 2000,
+    overlay: './img/overlays/10.png',
+    slides: [
+        { src: "./img/image-1.jpg" },
+        { src: "./img/image-2.jpg" },
+        { src: "./img/image-3.jpg" },
+        { src: "./img/image-4.jpg" }
+        ]
+    });
+    </script>
+
+  </body>
+
+</html>

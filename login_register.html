@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Créez un compte.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/styleAnt.css" rel="stylesheet">
+
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/bootstrap-social.css" rel="stylesheet">
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+
+    <!--     JS pour valider les formulaires du site https://jqueryvalidation.org/validate/  -->    
+    <script src="./js/jquery.validate.js"></script>
+    <script src="./js/additional-methods.js"></script>
+
+</head>
+
+<body>
+    <!-- Fixed navbar déconnecté -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+        </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse navbar-right">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><b>Connexion / Inscription</b> <span class="caret"></span></a>
+                <ul id="login-dp" class="dropdown-menu">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Connectez vous avec :
+                                <div>
+                                    <a href="#" class="btn btn-block btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-block btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                    <a href="#" class="btn btn-block btn-google"><i class="fa fa-google"></i> Gmail</a>
+                                </div>
+                                ou
+                                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="loginNav" name="loginNav">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputPassword2">Mot de passe</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe" required>
+                                        <div class="help-block text-right"><a href="mot-de-passe-oublier.html">Mot de passe oublié ?</a></div>
+                                    </div>
+                                    <div class="form-group">
+                                     <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+                                 </div>
+                                 <div class="checkbox">
+                                  <label for="checkForm">
+                                      <input type="checkbox" id="checkForm"> Rester connecté
+                                  </label>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!-- FIN DE LA BARRE DE NAV -->
+
+<!-- Fil d'ariane -->
+<div id=filpageregister class="container">
+  <ol class="row breadcrumb">
+    <li><a href="./index.html">Home</a></li>
+    <li class=" active">Authentification et Connexion</li>
+</ol>
+</div>
+<!-- Fin du fil d'ariane -->
+
+
+
+
+<!-- Top content -->
+<div class="top-content">
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h1>Bienvenue chez <strong>Alpha Projects</strong></h1>
+                <div class="description">
+                    <p>
+                       Vous avez un projet ?<br />
+                       <strong>Vous etes au bon endroit !</strong><br />
+                   </p>
+               </div>
+           </div>
+       </div>
+
+       <div class="row">
+        <div class="col-sm-5">
+
+            <div class="form-box">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <h3>Connectez vous</h3>
+                        <p>Entrer votre nom d'utilisateur :</p>
+                    </div>
+                    <div class="form-top-right">
+                        <i class="fa fa-key"></i>
+                    </div>
+                </div>
+
+                <div class="form-bottom">
+                  <form class="cmxform" id="loginForm" name="loginForm"  method="get" action="./index-user.html">
+                    <fieldset>
+                        <legend class="sr-only">Formulaire d'identification</legend>
+                        <p>
+                            <label for="userName" class="sr-only" for="userName">Nom d'utilisateur</label>
+                            <input id="userName" class="form-control" placeholder="Nom d'utilisateur" name="userName" minlength="2" type="text">
+                        </p>
+                        <p>
+                            <label for="userEmail" class="sr-only"  for="userEmail">E-Mail</label>
+                            <input id="userEmail" class="form-control" placeholder="E-mail" type="email" name="userEmail">
+                        </p>
+                        <p>
+                            <label for="formPassword" class="sr-only" for="formPassword">Mot de passe</label>
+                            <input type="password" name="formPassword" placeholder="Mot de passe" class="form-control" minlength="8"  id="formPassword">
+                        </p>
+                        <p>
+                            <input type="submit" class="btn btn-success validation" value="Connexion">
+                        </p>
+                        <p>    
+                            <a id=mdp href="mot-de-passe-oublier.html">Mot de passe oublié ?</a>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-login">
+            <h3>...connectez vous avec :</h3>
+            <div class="social-login-buttons">
+                <a class="btn btn-link-1 btn-link-1-facebook" href="#">
+                    <i class="fa fa-facebook"></i> Facebook
+                </a>
+                <a class="btn btn-link-1 btn-link-1-twitter" href="#">
+                    <i class="fa fa-twitter"></i> Twitter
+                </a>
+                <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+                    <i class="fa fa-google-plus"></i> Gmail
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-1 middle-border"></div>
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-5">
+
+        <div class="form-box">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Inscrivez vous maintenant</h3>
+                    <p>Rapide et gratuit :</p>
+                </div>
+                    <div class="form-top-right">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                        <div class="form-bottom">
+                            <form class="cmxform" id="signForm" method="get" action="./index-user.html">
+                                <fieldset>
+                                    <legend class="sr-only">Formulaire d'inscription</legend>
+                                    <p>
+                                        <label class="sr-only" for="signLastName">Prénom</label>
+                                        <input id="signLastName" class="form-control" placeholder="Prénom" name="signLastName" type="text">
+                                    </p>
+                                    <p>
+                                        <label class="sr-only" for="signFirstName">Nom</label>
+                                        <input id="signFirstName" class="form-control" placeholder="Nom" name="signFirstName" type="text">
+                                    </p>
+                                    <p>
+                                        <label class="sr-only" for="signUserName">Nom d'utilisateur</label>
+                                        <input id="signUserName" class="form-control" placeholder="Nom d'utilisateur" name="signUserName" type="text">
+                                    </p>
+                                    <p>
+                                        <label class="sr-only" for="signPassword">mot de passe</label>
+                                        <input id="signPassword" class="form-control" placeholder="Mot de passe" name="signPassword" type="password">
+                                    </p>
+                                    <p>
+                                        <label class="sr-only" for="confirm_password">Confirmer le mot de passe</label>
+                                        <input id="confirm_password" class="form-control" placeholder="Confirmer le mot de passe" name="confirm_password" type="password">
+                                    </p>
+                                    <p>
+                                        <label class="sr-only" for="signEmail">Email</label>
+                                        <input id="signEmail" class="form-control" placeholder="E-mail" name="signEmail" type="email">
+                                    </p>
+                                    <p>
+                                        <label for="signNewsletter">S'abonner à une newsletter</label>
+                                        <input type="checkbox" class="checkbox" id="signNewsletter" name="signNewsletter">
+                                    </p>
+                                    <fieldset id="newsletter_topics">
+                                        <legend>Sujets (en sélectionner au moins deux)</legend>
+                                        <label for="topic_marketflash">
+                                         <input type="checkbox" id="topic_marketflash" value="marketflash" name="topic">Marketflash
+                                     </label>
+                                     <label for="topic_fuzz">
+                                         <input type="checkbox" id="topic_fuzz" value="fuzz" name="topic">Latest fuzz
+                                     </label>
+                                     <label  for="topic_digester">
+                                         <input type="checkbox" id="topic_digester" value="digester" name="topic">Mailing list digester
+                                     </label>
+                                     <label class="sr-only" for="topic" class="error">Please select at least two topics you'd like to receive.</label>
+                                 </fieldset>
+                                 <p>
+                                    <input  class="btn btn-success validation" type="submit" value="Valider">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOOTER -->
+<div class="container-fluid">
+  <div class="row footer">
+    <hr>
+    <div class="col-lg-12">
+      <div class="col-md-6">
+        <a href="./AlphaProject-contact.html">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+    </div>
+    <div class="col-md-6">
+        <p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!--     JS pour valider les formulaires du site https://jqueryvalidation.org/validate/  -->   
+  <script>
+  $.validator.setDefaults({
+    submitHandler: function() {
+      alert("submitted!");
+    }
+  });
+
+  $().ready(function() {
+
+    // validate signup form on keyup and submit
+/*signUserName
+signLastName
+signFirtname
+signPassword
+confirm_password
+signEmail
+signNewsletter
+topic_marketflash
+topic_fuzz"
+topic_digester*/
+
+    $('#loginForm').validate({
+
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2
+        },
+        formPassword: {
+          required: true,
+          minlength: 5
+        },
+        userEmail: {
+          required: true,
+          email: true
+        }  
+      },
+      messages: {
+        userName: {
+          required: "Vous devez entrer un Nom d'utilisateur",
+          minlength: "Votre nom d'utilisateur doit comporter au moins 2 charactères"
+        },
+        formPassword: {
+          required: "Entez votre mot de passe",
+          minlength: "Votre mot de passe doit contenir au moins 5 charactères"
+        },
+        userEmail: "Entrez une adresse email valide",
+        agree: "Veuillez accepter nos conditions",
+        topic: "Sélectionnez au moins deux sujets"
+      }
+    });
+
+    $("#signForm").validate({
+
+      rules: {
+        signLastName: {
+          required: true,
+          minlength: 2
+        },
+        signFirstName: {
+          required: true,
+          minlength: 2
+        },
+        signUserName: {
+          required: true,
+          minlength: 2
+        },
+        signPassword: {
+          required: true,
+          minlength: 5
+        },
+        signEmail: {
+          required: true,
+          email: true
+        },
+        confirm_password: {
+          required: true,
+          minlength: 5,
+          equalTo: "#signPassword"
+        },        
+        topic: {
+          required: "#newsletter:checked",
+          minlength: 2
+        },
+        agree: "required"
+      },
+      messages: {
+        signLastName: {
+          required: "Vous devez entrer votre prénom",
+          minlength: "Votre prénom doit comporter au moins 2 charactères"
+        },
+        signFirstName: {
+          required: "Vous devez entrer votre prénom",
+          minlength: "Votre prénom doit comporter au moins 2 charactères"
+        },
+        signUserName: {
+          required: "Vous devez entrer un Nom d'utilisateur",
+          minlength: "Votre nom d'utilisateur doit comporter au moins 2 charactères"
+        },
+        signPassword: {
+          required: "Entez un mot de passe",
+          minlength: "Votre mot de passe doit contenir au moins 5 charactères"
+        },
+        confirm_password: {
+          required: "Confirmez le mot de passe",
+          minlength: "Votre mot de passe doit contenir au moins 5 charactères",
+          equalTo: "Entrez le même mot de passe qu'au dessus"
+        },
+        signEmail: "Entrez une adresse email valide",
+        agree: "Veuillez accepter nos conditions",
+        topic: "Sélectionnez au moins deux sujets"
+      }
+    });
+
+    // propose username by combining first- and lastname
+    $("#signUserName").focus(function() {
+      var signFirstName = $("#signFirstName").val();
+      var signLastName = $("#signLastName").val();
+      if (signFirstName && signLastName && !this.value) {
+        this.value = signFirstName + "." + signLastName;
+      }
+    });
+
+    //code to hide topic selection, disable for demo
+    var signNewsletter = $("#signNewsletter");
+    // newsletter topics are optional, hide at first
+    var inital = signNewsletter.is(":checked");
+    var topics = $("#newsletter_topics")[inital ? "removeClass" : "addClass"]("gray");
+    var topicInputs = topics.find("input").attr("disabled", !inital);
+    // show when newsletter is checked
+    signNewsletter.click(function() {
+      topics[this.checked ? "removeClass" : "addClass"]("gray");
+      topicInputs.attr("disabled", !this.checked);
+    });
+  });
+  </script>
+
+</body>
+
+</html>

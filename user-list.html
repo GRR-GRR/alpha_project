@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Liste Utilisateurs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styleAnt.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+  </head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="container-fluid">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+            			<a class="navbar-brand" href="#">
+            			<img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects</a>
+        		</div>
+          		<div id="navbar" class="navbar-collapse collapse navbar-right">
+            		<ul class="nav navbar-nav">
+              			<li>           
+                			<a class="text-center" href="#">
+                  			<button type="button" class="btn btn-sm btn-primary creer">Créer un projet</button>
+                			</a>
+              			</li>
+              			<li>
+                			<a href="#">
+                 			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 39 Messages
+                			</a>
+             			</li>
+              			<li>
+                			<a href="#">
+                  			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 3 Comments
+                			</a>
+              			</li>
+              			<li>
+                			<a href="#">
+                  			<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> 39 Shares
+                			</a>
+              			</li>
+              			<li class="dropdown">
+                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Antoine Sestier - Admin panel<span class="pull-right"><img src="./img/1797416_10152171215647459_1088434335_n.jpg" alt="image user" style="width: 40px; height: 40px;"></span></a>
+                				<ul class="dropdown-menu">
+                  					<li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                  					<li class="divider"></li>
+                  					<li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+                  					<li class="divider"></li>
+                  					<li><a href="#">Messages <span class="badge pull-right"> 39</span></a></li>
+                  					<li class="divider"></li>
+                  					<li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+                  					<li class="divider"></li>
+                  					<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                  					<li role="separator" class="divider"></li>
+                  					<li><a href="http://getbootstrap.com/examples/theme/#">Action</a></li>
+                 					<li><a href="http://getbootstrap.com/examples/theme/#">Another action</a></li>
+                 					<li><a href="http://getbootstrap.com/examples/theme/#">Something else here</a></li>
+                  					<li role="separator" class="divider"></li>
+                  					<li class="dropdown-header">Nav header</li>
+                  					<li><a href="http://getbootstrap.com/examples/theme/#">Separated link</a></li>
+                  					<li><a href="http://getbootstrap.com/examples/theme/#">One more separated link</a></li>
+                				</ul>
+              			</li>
+            		</ul>
+         		</div>
+      		</div>
+    	</nav>
+
+<!------------------------------------------Debut Search BAR-------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 pull-center well">
+                <form class="form-inline" action="#" method="POST">
+                    <center>  
+                        <select class="form-control">
+                            <option>Utilisateur</option>
+                            <option>Projet</option>
+                            <option>Catégorie</option>
+                            <option>Ville</option>
+                        </select>
+                        <div class="input-group custom-search-form">
+                            <input id="search" type="text" class="form-control" placeholder="...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i>Rechercher</i>
+                                </button>
+                            </span>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------Fin  Search BAR-------------------------------------->
+
+    	<div class="container">
+    		<div class="row content well well-ap">
+    			<div class="container-fluid col-sm-3 text-center">
+    				<img src="link.jpg" alt="Photo de profil" style="width: 100%; height: 250px;">
+    				<a href="fenetre signalement">Signaler ce profil</a>
+    			</div>
+    			<div class="col-sm-9">
+    				<h2>Mickael Marcelat</h2>
+    					<p>Je m’appelle Mickael, j'ai 27 ans, j'habite en Isère à Grenoble.
+						Je vais vous faire un p'tite présentation de ma passion pour le gaming et le hardware informatique.
+						J'ai découvert Star Citizen via mon frère qui possédait le jeux depuis le début.
+						A force de le voir jouer et de voir des vidéo sur you tube j'ai craquer et acheter le jeux il y a 4 mois, j'ai déjà passer plus de 200 heures dessus tranquilloux
+						</p>
+    					<span class="fa fa-mars" ></span> Age : 27 ans | Lieu de résidence : Grenoble
+    					<div class="categorie-block">
+    						<h5>Centres d'intérêts/Tags :</h5>
+    							<span class="label label-success">environemment</span>
+    							<span class="label label-danger">social</span>
+    							<span class="label label-primary">informatique</span>
+    							<span class="label label-warning">football</span>
+    					</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<h4>Projets que j'ai initié :</h4>
+    					<a href="#">Construction de drones</a> |
+    					<a href="#">Organisation d'un festival</a> |
+    					<a href="#">Potager en commun</a>
+    				<h4>Projets auquels j'ai participé :</h4>
+    					<a href="#">Création jeux video</a> |
+    					<a href="#">Aide à domicile pour bricolage</a>
+    			</div>
+    			<div class="container-fluid">
+    				<div class="text-center col-sm-12">
+    					<a href="AlphaProject-User.html"><button type="button" class="btn btn-primary btn-participer">Voir le profil complet</button></a>
+    					<a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre cet utilisateur</button></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row content well well-ap">
+    			<div class="container-fluid col-sm-3 text-center">
+    				<img src="berserk_mini.jpg" alt="Photo de profil" style="width: 100%; height: 250px;">
+    				<a href="fenetre signalement">Signaler ce profil</a>
+    			</div>
+    			<div class="col-sm-9">
+    				<h2>Guts Berserk</h2>
+    					<p>Guts continue sa carrière de mercenaire et finit par être engagé après quelques déconvenues, par un groupe nommé la « Bande du Faucon » : En effet, Guts participant depuis quelques mois à une bataille s'opposant à la Bande/brigade du Faucon durant un siège, il se distinguera par un véritable haut-fait d'armes, en tuant vaillamment le célèbre "Bazuso" dit "le tueur d'une trentaine" "thirty man slayer" (d'hommes) remportant ainsi la prime en or. Ce déboutant de ses fonctions après la victoire de la Bande du Faucon, tout le monde convoitera ainsi son or et sa personne...</p>
+    					<span class="fa fa-mars" ></span> Age : 23 ans | Lieu de résidence : Midland
+    					<div class="categorie-block">
+    						<h5>Centres d'intérêts/Tags :</h5>
+    							<span class="label label-success">Griffith</span>
+    							<span class="label label-danger">Brigade du Faucon</span>
+    							<span class="label label-primary">Dragonslayer</span>
+    							<span class="label label-warning">Casca</span>
+    					</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<h4>Projets que j'ai initié :</h4>
+    					<a href="#">Construction de drones</a> |
+    					<a href="#">Organisation d'un festival</a> |
+    					<a href="#">Potager en commun</a>
+    				<h4>Projets auquels j'ai participé :</h4>
+    					<a href="#">Création jeux video</a> |
+    					<a href="#">Aide à domicile pour bricolage</a>
+    			</div>
+    			<div class="container-fluid">
+    				<div class="text-center col-sm-12">
+    					<a href="AlphaProject-User.html"><button type="button" class="btn btn-primary btn-participer">Voir le profil complet</button></a>
+    					<a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre cet utilisateur</button></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row content well well-ap">
+    			<div class="container-fluid col-sm-3 text-center">
+    				<img src="link.jpg" alt="Photo de profil" style="width: 100%; height: 250px;">
+    				<a href="fenetre signalement">Signaler ce profil</a>
+    			</div>
+    			<div class="col-sm-9">
+    				<h2>Mickael Marcelat</h2>
+    					<p>Je m’appelle Mickael, j'ai 27 ans, j'habite en Isère à Grenoble.
+						Je vais vous faire un p'tite présentation de ma passion pour le gaming et le hardware informatique.
+						J'ai découvert Star Citizen via mon frère qui possédait le jeux depuis le début.
+						A force de le voir jouer et de voir des vidéo sur you tube j'ai craquer et acheter le jeux il y a 4 mois, j'ai déjà passer plus de 200 heures dessus tranquilloux
+						</p>
+    					<span class="fa fa-mars" ></span> Age : 27 ans | Lieu de résidence : Grenoble
+    					<div class="categorie-block">
+    						<h5>Centres d'intérêts/Tags :</h5>
+    							<span class="label label-success">environemment</span>
+    							<span class="label label-danger">social</span>
+    							<span class="label label-primary">informatique</span>
+    							<span class="label label-warning">football</span>
+    					</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<h4>Projets que j'ai initié :</h4>
+    					<a href="#">Construction de drones</a> |
+    					<a href="#">Organisation d'un festival</a> |
+    					<a href="#">Potager en commun</a>
+    				<h4>Projets auquels j'ai participé :</h4>
+    					<a href="#">Création jeux video</a> |
+    					<a href="#">Aide à domicile pour bricolage</a>
+    			</div>
+    			<div class="container-fluid">
+    				<div class="text-center col-sm-12">
+    					<a href="AlphaProject-User.html"><button type="button" class="btn btn-primary btn-participer">Voir le profil complet</button></a>
+    					<a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre cet utilisateur</button></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="container">
+    		<div class="row content well well-ap">
+    			<div class="container-fluid col-sm-3 text-center">
+    				<img src="berserk_mini.jpg" alt="Photo de profil" style="width: 100%; height: 250px;">
+    				<a href="fenetre signalement">Signaler ce profil</a>
+    			</div>
+    			<div class="col-sm-9">
+    				<h2>Guts Berserk</h2>
+    					<p>Guts continue sa carrière de mercenaire et finit par être engagé après quelques déconvenues, par un groupe nommé la « Bande du Faucon » : En effet, Guts participant depuis quelques mois à une bataille s'opposant à la Bande/brigade du Faucon durant un siège, il se distinguera par un véritable haut-fait d'armes, en tuant vaillamment le célèbre "Bazuso" dit "le tueur d'une trentaine" "thirty man slayer" (d'hommes) remportant ainsi la prime en or. Ce déboutant de ses fonctions après la victoire de la Bande du Faucon, tout le monde convoitera ainsi son or et sa personne...</p>
+    					<span class="fa fa-mars" ></span> Age : 23 ans | Lieu de résidence : Midland
+    					<div class="categorie-block">
+    						<h5>Centres d'intérêts/Tags :</h5>
+    							<span class="label label-success">Griffith</span>
+    							<span class="label label-danger">Brigade du Faucon</span>
+    							<span class="label label-primary">Dragonslayer</span>
+    							<span class="label label-warning">Casca</span>
+    					</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<h4>Projets que j'ai initié :</h4>
+    					<a href="#">Construction de drones</a> |
+    					<a href="#">Organisation d'un festival</a> |
+    					<a href="#">Potager en commun</a>
+    				<h4>Projets auquels j'ai participé :</h4>
+    					<a href="#">Création jeux video</a> |
+    					<a href="#">Aide à domicile pour bricolage</a>
+    			</div>
+    			<div class="container-fluid">
+    				<div class="text-center col-sm-12">
+    					<a href="AlphaProject-User.html"><button type="button" class="btn btn-primary btn-participer">Voir le profil complet</button></a>
+    					<a href="AlphaProject-profil.html"><button type="button" class="btn btn-primary btn-participer">Suivre cet utilisateur</button></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+      <div class="container">
+        <div class="row content">
+          <div class=" container-fluid col-sm-12 text-center">
+            <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+             <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+
+    	<div class="container-fluid">
+      		<div class="row footer">
+        		<hr>
+          			<div class="col-lg-12">
+            			<div class="col-md-6">
+              				<a href="#">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+            			</div>
+            			<div class="col-md-6">
+              				<p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+            			</div>
+          			</div>
+      		</div>
+      	</div>
+
+	</body>
+
+</html>

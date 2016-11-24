@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Apache Team">
+    <link rel="icon" href="./img/favicon.ico">
+
+    <title>Alpha Projects - Création de profil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styleAnt.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+  </head>
+
+	<body>
+
+			<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Alpha Project" src="./img/icone-apache.png">Alpha Projects
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li>           
+              <a class="text-center" href="./AlphaProject-Projet-Creer.html">
+                <button type="button" class="btn btn-sm btn-primary creer">Créer un projet</button>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 39 Messages
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 3 Comments
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> 39 Shares
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Antoine Sestier - Admin panel<span class="pull-right"><img alt="ImageLogo" src="./img/1797416_10152171215647459_1088434335_n.jpg" data-holder-rendered="true" style="width: 40px; height: 40px;"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">Messages <span class="badge pull-right"> 39</span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="http://getbootstrap.com/examples/theme/#">Action</a></li>
+                <li><a href="http://getbootstrap.com/examples/theme/#">Another action</a></li>
+                <li><a href="http://getbootstrap.com/examples/theme/#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="http://getbootstrap.com/examples/theme/#">Separated link</a></li>
+                <li><a href="http://getbootstrap.com/examples/theme/#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- FIN DE LA BARRE DE NAV -->
+
+<!-- Fil d'ariane -->
+		<div class="container">
+  			<ol class="row breadcrumb">
+    			<li><a href="#">Home</a></li>
+  			</ol>
+		</div>
+<!-- Fin du fil d'ariane -->
+
+		<div class="container">
+			<div class="row content well well-ap">
+				<div class="col-sm-3 col-xs-12 text-center">
+					<img src="link.jpg" class="img" alt="Photo de profil" width="250" height="250">
+						<p></p>
+					<div class="form-group">
+        				<label class="control-label">Changez la photo de profil</label>
+        				<input id="input-1" type="file" class="file">
+      				</div>
+				</div>
+				<div class="col-sm-9 col-xs-12">
+					<form class="col-sm-offset-1 container-fluid">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<div class="form-group">
+								<label for="nom">Nom :</label>
+								<input type="text" id="nom" />
+							</div>
+							<div class="form-group">
+								<label for="prénom">Prénom :</label>
+								<input type="text" id="prénom" />
+							</div>
+							<div class="form-group">
+								<label for="ville">Ville :</label>
+								<input type="text" id="ville" />
+							</div>
+							<div class="form-group">
+								<label for="age">Age :</label>
+								<input type="number" id="age">
+							</div>
+              <div>
+								<legend>Civilité : </legend>
+								<input type="radio" name="civilite" value="monsieur" id="monsieur"></input>
+								<label for="monsieur">Monsieur</label>
+								<br><br>
+								<input type="radio" name="civilite" value="madame" id="madame"></input>
+								<label type="madame">Madame</label>
+						  </div>
+            </div>
+					</form>
+        </div>
+        <div>
+					<div class="col-sm-8 col-xs-12">
+						<div class="form-groupe">
+							<label for="description">Description :</label>
+							<textarea class="form-controle" style="width: 100%;" rows="7" id="description"></textarea>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+<!-- FOOTER -->
+		<div class="container-fluid">
+  			<div class="row footer">
+    			<hr>
+    			<div class="col-lg-12">
+     				<div class="col-lg-6">
+        				<a href="./AlphaProject-contact.html">Contact</a> | <a href="#">Mentions Légales</a> | <a href="#">Privacy</a>    
+      				</div>
+      				<div class="col-lg-6">
+        				<p class="muted pull-right">© 2016 Alpha Projects. Droits réservés - Digital Campus in the Alps</p>
+    				</div>
+   				</div>
+  			</div>
+		</div>
+	</body>
+</html>

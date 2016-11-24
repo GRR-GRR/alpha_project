@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="Apache Team">
+        <link rel="icon" href="./img/favicon.ico">
+
+        <title>Formulaires</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/styleAnt.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <h3 id="common_examples">Mes formulaires</h3>
+                <div class="col-md-12 tag-box tag-box-v3">
+                    <p>Tout ceci est a remplir.</p>
+                    
+                    <br />
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#common_contact_tab" aria-controls="common_contact_tab" role="tab" data-toggle="tab">Formulaire de contact</a></li>
+                        <li role="presentation"><a href="#common_login_tab" aria-controls="common_login_tab" role="tab" data-toggle="tab">Connection</a></li>
+                        <li role="presentation"><a href="#common_email_tab" aria-controls="common_email_tab" role="tab" data-toggle="tab">Abonnement</a></li>
+                        <li role="presentation"><a href="#common_address_tab" aria-controls="common_address_tab" role="tab" data-toggle="tab">Adresse</a></li>
+                        
+                    </ul>
+                    
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="common_contact_tab">
+                            <h4>Formulaire de contact</h4>
+                            <div class="tag-box tag-box-v2">
+                                <form>
+
+                                    <div class="form-group"> <!-- Name field -->
+                                        <label class="control-label " for="name">Nom</label>
+                                        <input class="form-control" id="name" name="name" type="text"/>
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Email field -->
+                                        <label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
+                                        <input class="form-control" id="email" name="email" type="text"/>
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Subject field -->
+                                        <label class="control-label " for="subject">Sujet</label>
+                                        <input class="form-control" id="subject" name="subject" type="text"/>
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Message field -->
+                                        <label class="control-label " for="message">Message</label>
+                                        <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <button class="btn btn-primary " name="submit" type="submit">Valider</button>
+                                    </div>
+                                    
+                                </form>         
+                            </div>              
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="common_login_tab">
+                            <h4>Connection</h4>
+                            <div class="tag-box tag-box-v2">
+                                <form class="form-inline">
+                                    
+                                    <div class="form-group"> <!-- Username field -->
+                                        <input class="form-control" id="username_id" name="user_name" type="text" placeholder="Pseudo"/>
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Password field -->
+                                        <input class="form-control" id="password_id" name="user_password" type="password" placeholder="mot de passe"/>
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Login button -->
+                                        <button class="btn btn-primary " name="submit" type="submit">Connection</button>
+                                    </div>  
+                                    
+                                    <div class="form-group"> <!-- Remember Field -->
+                                        <div class="checkbox">
+                                            <label class="checkbox">
+                                                <input name="remember" type="checkbox" value="yes"/>
+                                                Se rappeler
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </form>                 
+                            </div>              
+                        </div>  
+                        <div role="tabpanel" class="tab-pane" id="common_email_tab">
+                            <h4>Abonnement</h4>
+                            <div class="tag-box tag-box-v2">
+                            
+                                <form class="form-horizontal">
+
+                                    <div class="form-group"> <!-- Full Name -->
+                                        <label for="full_name_id" class="control-label col-sm-2">Nom Prénom</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Jean x">
+                                        </div>  
+                                    </div>
+                                
+                                    <div class="form-group"> <!-- Email -->
+                                        <label for="email_id" class="control-label col-sm-2">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email_id" name="email_name" placeholder="nom@domaine.com">
+                                            <p class="help-text">Nous ne diffuserons pas votre adresse.</p>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Frequency Field -->
+                                        <label class="control-label col-sm-2">Envoyez-moi un mail</label>
+                                        <div class="col-sm-10">
+                                            <div class="radio">
+                                                <label class="radio">
+                                                    <input name="email_frequency" type="radio" value="Quotidien"/>
+                                                    Tout les jours
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="radio">
+                                                    <input name="email_frequency" type="radio" value="hebdomadaire"/>
+                                                    Une fois par semaine
+                                                </label>
+                                            </div>  
+                                            <div class="radio">
+                                                <label class="radio">
+                                                    <input name="email_frequency" type="radio" value="Mensuel"/>
+                                                    Tout les mois
+                                                </label>
+                                            </div>                                          
+                                        </div>
+                                    </div>                          
+                                     
+                                    <div class="form-group"> <!-- Submit Button -->
+                                        <div class="col-sm-10 col-sm-offset-2">                     
+                                            <button type="submit" class="btn btn-primary">Tenez-moi informé !</button>
+                                        </div>
+                                    </div>        
+                                     
+                                </form>                 
+                            </div>              
+                        </div>          
+                        <div role="tabpanel" class="tab-pane" id="common_address_tab">
+                            <h4>Coordonnées</h4>
+                            <div class="tag-box tag-box-v2">
+                                <form>
+                                    <div class="form-group"> <!-- Full Name -->
+                                        <label for="full_name_id" class="control-label">Nom prénom</label>
+                                        <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Jean X">
+                                    </div>  
+
+                                    <div class="form-group"> <!-- Street 1 -->
+                                        <label for="street1_id" class="control-label">Adresse</label>
+                                        <input type="text" class="form-control" id="street1_id" name="adresse1" placeholder="N° Rue ">
+                                    </div>                  
+                                                            
+                                    <div class="form-group"> <!-- Street 2 -->
+                                        <label for="street2_id" class="control-label">Complément d'adresse</label>
+                                        <input type="text" class="form-control" id="street2_id" name="adresse2" placeholder="ex : 3e étage, porte de gauche au fond du couloir">
+                                    </div>  
+
+                                    <div class="form-group"> <!-- City-->
+                                        <label for="city_id" class="control-label">Votre ville</label>
+                                        <input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
+                                    </div>                                  
+
+                                    <div class="form-group"> <!-- City-->
+                                        <label for="codepostal" class="control-label">Code postal</label>
+                                        <input type="text" class="form-control" id="codepostal" name="codepostal" placeholder="00000">
+                                    </div>
+
+                                    <div class="form-group"> <!-- State Button -->
+                                        <label for="state_id" class="control-label">Département</label>
+                                        <select class="form-control" id="state_id">
+<!--                                             <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District Of Columbia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option> -->
+
+                                            <option value="01">Ain</option>
+                                            <option value="02">Aisne</option>
+                                            <option value="03">Allier</option>
+                                            <option value="04">Alpes-de-Haute-Provence</option>
+                                            <option value="05">Hautes-Alpes</option>
+                                            <option value="06">Alpes-Maritimes</option>
+                                            <option value="07">Ardèche</option>
+                                            <option value="08">Ardennes</option>
+                                            <option value="09">Ariège</option>
+                                            <option value="10">Aube</option>
+                                            <option value="11">Aude</option>
+                                            <option value="12">Aveyron</option>
+                                            <option value="13">Bouches-du-Rhône</option>
+                                            <option value="14">Calvados</option>
+                                            <option value="15">Cantal</option>
+                                            <option value="16">Charente</option>
+                                            <option value="17">Charente-Maritime</option>
+                                            <option value="18">Cher</option>
+                                            <option value="19">Corrèze</option>
+                                            <option value="21">Côte-d'Or</option>
+                                            <option value="22">Côtes-d'Armor</option>
+                                            <option value="23">Creuse</option>
+                                            <option value="24">Dordogne</option>
+                                            <option value="25">Doubs</option>
+                                            <option value="26">Drôme</option>
+                                            <option value="27">Eure</option>
+                                            <option value="28">Eure-et-Loir</option>
+                                            <option value="29">Finistère</option>
+                                            <option value="2A">Corse-du-Sud</option>
+                                            <option value="2B">Haute-Corse</option>
+                                            <option value="30">Gard</option>
+                                            <option value="31">Haute-Garonne</option>
+                                            <option value="32">Gers</option>
+                                            <option value="33">Gironde</option>
+                                            <option value="34">Hérault</option>
+                                            <option value="35">Ille-et-Vilaine</option>
+                                            <option value="36">Indre</option>
+                                            <option value="37">Indre-et-Loire</option>
+                                            <option value="38">Isère</option>
+                                            <option value="39">Jura</option>
+                                            <option value="40">Landes</option>
+                                            <option value="41">Loir-et-Cher</option>
+                                            <option value="42">Loire</option>
+                                            <option value="43">Haute-Loire</option>
+                                            <option value="44">Loire-Atlantique</option>
+                                            <option value="45">Loiret</option>
+                                            <option value="46">Lot</option>
+                                            <option value="47">Lot-et-Garonne</option>
+                                            <option value="48">Lozère</option>
+                                            <option value="49">Maine-et-Loire</option>
+                                            <option value="50">Manche</option>
+                                            <option value="51">Marne</option>
+                                            <option value="52">Haute-Marne</option>
+                                            <option value="53">Mayenne</option>
+                                            <option value="54">Meurthe-et-Moselle</option>
+                                            <option value="55">Meuse</option>
+                                            <option value="56">Morbihan</option>
+                                            <option value="57">Moselle</option>
+                                            <option value="58">Nièvre</option>
+                                            <option value="59">Nord</option>
+                                            <option value="60">Oise</option>
+                                            <option value="61">Orne</option>
+                                            <option value="62">Pas-de-Calais</option>
+                                            <option value="63">Puy-de-Dôme</option>
+                                            <option value="64">Pyrénées-Atlantiques</option>
+                                            <option value="65">Hautes-Pyrénées</option>
+                                            <option value="66">Pyrénées-Orientales</option>
+                                            <option value="67">Bas-Rhin</option>
+                                            <option value="68">Haut-Rhin</option>
+                                            <option value="69">Rhône</option>
+                                            <option value="70">Haute-Saône</option>
+                                            <option value="71">Saône-et-Loire</option>
+                                            <option value="72">Sarthe</option>
+                                            <option value="73">Savoie</option>
+                                            <option value="74">Haute-Savoie</option>
+                                            <option value="75">Paris</option>
+                                            <option value="76">Seine-Maritime</option>
+                                            <option value="77">Seine-et-Marne</option>
+                                            <option value="78">Yvelines</option>
+                                            <option value="79">Deux-Sèvres</option>
+                                            <option value="80">Somme</option>
+                                            <option value="81">Tarn</option>
+                                            <option value="82">Tarn-et-Garonne</option>
+                                            <option value="83">Var</option>
+                                            <option value="84">Vaucluse</option>
+                                            <option value="85">Vendée</option>
+                                            <option value="86">Vienne</option>
+                                            <option value="87">Haute-Vienne</option>
+                                            <option value="88">Vosges</option>
+                                            <option value="89">Yonne</option>
+                                            <option value="90">Territoire de Belfort</option>
+                                            <option value="91">Essonne</option>
+                                            <option value="92">Hauts-de-Seine</option>
+                                            <option value="93">Seine-Saint-Denis</option>
+                                            <option value="94">Val-de-Marne</option>
+                                            <option value="95">Val-d'Oise</option>
+                                            <option value="971">Guadeloupe</option>
+                                            <option value="972">Martinique</option>
+                                            <option value="973">Guyane</option>
+                                            <option value="974">La Réunion</option>
+
+
+                                        </select>                   
+                                    </div>
+                                    
+                                    <div class="form-group"> <!-- Street 1 -->
+                                        <label for="phone" class="control-label">Téléphone</label>
+                                        <input type="number" class="form-control" id="phone" name="phone" placeholder="+33(0)0 00 00 00">
+                                    </div>     
+                                    
+                                    <div class="form-group"> <!-- Submit Button -->
+                                        <button type="submit" class="btn btn-primary">Valider</button>
+                                    </div>     
+                                    
+                                </form>
+
+
+                            </div>
+                        </div>  
+                    </div>          
+                </div>
+            </div>
+            <form action="" method="post">
+              <h4>Formulaire de paiement</h4>
+              <p>Les champs obligatoires sont suivis par <strong><abbr title="obligatoire">*</abbr></strong>.</p>
+             
+              <section>
+              <h3>Information de contact</h3>
+             
+              <fieldset>
+                <legend>Titre</legend>
+                <ul>
+                <li>
+                  <label for="titre_1">
+                  <input type="radio" id="titre_1" name="titre" value="M." />
+                  Monsieur
+                  </label>
+                </li>
+                <li>
+                  <label for="titre_2">
+                  <input type="radio" id="titre_2" name="titre" value="Mme" />
+                  Madame
+                  </label>
+                </li>
+                </ul>
+              </fieldset>
+             
+              <p>
+                <label for="nom">
+                <span>Nom&nbsp;:</span>
+                <input type="text" id="nom" name="nomdutilisateur" required />
+                <strong><abbr title="obligatoire">*</abbr></strong>
+                </label>
+              </p>
+             
+               <p>
+                <label for="courriel">
+                <span>Courriel&nbsp;:</span>
+                <input type="email" id="courriel" name="courrielutilisateur" required />
+                <strong><abbr title="required">*</abbr></strong>
+                </label>
+              </p>
+              </section>
+             
+              <section>
+              <h3>Information de paiement</h3>
+             
+              <p>
+                <label for="carte">
+                <span>Type de carte&nbsp;:</span>
+                <select id="card" name="carteutilisateur">
+                  <option value="visa">Visa</option>
+                  <option value="mc">Mastercard</option>
+                  <option value="amex">American Express</option>
+                </select>
+                </label>
+              </p>
+              <p>
+                <label for="numero">
+                <span>Numéro de la carte&nbsp;:</span>
+                <input type="text" id="numero" name="numerocarte" required />
+                <strong><abbr title="obligatoire">*</abbr></strong>
+                </label>
+              </p>
+              <p>
+                <label for="date">
+                <span>Date d'expiration&nbsp;:</span>
+                <input type="text" id="date" name="expiration" required />
+                <strong><abbr title="obligatoire">*</abbr></strong>
+                <em>au format mm/aa</em>
+                </label>
+              </p>
+              </section>
+             
+              <section>
+              <p>
+                <button>Confirmer le paiement</button>
+              </p>
+              </section>
+            </form>  
+        </div>   
+    </body>
+
+</html>    
